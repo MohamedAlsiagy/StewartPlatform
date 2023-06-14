@@ -1,0 +1,923 @@
+SOLIDWORKS Motion Mechanism
+!
+!-------------------------------- SYSTEM UNITS ---------------------------------
+!
+UNITS/
+, FORCE = NEWTON
+, MASS = KILOGRAM
+, LENGTH = METER
+, TIME = SECOND
+!
+!----------------------------------- PARTS -------------------------------------
+!
+!----------------------------------- Ground ------------------------------------
+!
+!Mechanism simTime 5
+!Mechanism simFrames 125
+!                            adams_view_name='ground'
+PART/1
+, GROUND
+!
+!                          adams_view_name='MARKER_15'
+MARKER/15
+, PART = 1
+, QP = 0.0771116202, 0.022, 0.0137842104
+!
+!                          adams_view_name='MARKER_17'
+MARKER/17
+, PART = 1
+, QP = 0.0912986147, 0.022, 0.0383568057
+!
+!                          adams_view_name='MARKER_19'
+MARKER/19
+, PART = 1
+, QP = 0.022304, 0.022, 0.1578589838
+!
+!                          adams_view_name='MARKER_21'
+MARKER/21
+, PART = 1
+, QP = -0.0060699891, 0.022, 0.1578589838
+!
+!                          adams_view_name='MARKER_23'
+MARKER/23
+, PART = 1
+, QP = -0.0608776092, 0.022, 0.0137842104
+!
+!                          adams_view_name='MARKER_35'
+MARKER/35
+, PART = 1
+, QP = -0.0750646038, 0.022, 0.0383568057
+!
+!                        adams_view_name='base-1_Origin'
+MARKER/10000
+, PART = 1
+, QP = 0.0081170055, 0, 0.07
+!
+!                           adams_view_name='_Origin'
+MARKER/10017
+, PART = 1
+!
+!                         adams_view_name='MARKER_10028'
+MARKER/10028
+, PART = 1
+, QP = 0.0081170055, 0, 0.07
+!
+!                     adams_view_name='base_1_graphic_body1'
+GRAPHICS/2
+, EXTERNAL
+, RM = 10028
+, FILE = final_SW_part14_solid1.xmt_bin
+, FACETING_TOLERANCE = 300.0028
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='arm-1'
+PART/2
+, QG = -0.0723706189, 0.0440763521, 0.0466448261
+, REULER = 66.64382569D, 52.85314373D, -64.01762651D
+, MASS = 0.0227971458
+, CM = 10002
+, IP = 4.132712518E-05, 6.760281147E-07, 4.132711253E-05
+!
+!                          adams_view_name='MARKER_13'
+MARKER/13
+, PART = 2
+, QP = 0, 0.1288609375, 0
+, REULER = -11.36708928D, 0D, 0D
+!
+!                          adams_view_name='MARKER_37'
+MARKER/37
+, PART = 2
+, QP = 0, 0.06, 0
+, REULER = 0D, 90D, -149.3850851D
+!
+!                          adams_view_name='MARKER_47'
+MARKER/47
+, PART = 2
+, QP = 0, 0.06, 0
+, REULER = 0D, 90D, -149.3850851D
+!
+!                          adams_view_name='MARKER_53'
+MARKER/53
+, PART = 2
+, QP = 0, 0.06, 0
+, REULER = 0D, 90D, -149.3850851D
+!
+!                         adams_view_name='arm-1_Origin'
+MARKER/10001
+, PART = 2
+!
+!                              adams_view_name='cm'
+MARKER/10002
+, PART = 2
+, QP = 8.327425589E-09, 0.0770484358, 0
+!
+!                         adams_view_name='MARKER_10029'
+MARKER/10029
+, PART = 2
+, QP = 3.648574012E-09, -2.075603203E-07, -1.473986862E-07
+, REULER = -8.807926058E-06D, 0D, 0D
+!
+!                     adams_view_name='arm_1_graphic_body1'
+GRAPHICS/4
+, EXTERNAL
+, RM = 10029
+, FILE = final_SW_part11_solid1.xmt_bin
+, FACETING_TOLERANCE = 300.0028
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='arm-7'
+PART/3
+, QG = 0.0886046299, 0.0440763521, 0.0466448261
+, REULER = 13.8499141D, 20.57480928D, -6.456683418D
+, MASS = 0.0227971458
+, CM = 10004
+, IP = 4.132712518E-05, 6.760281147E-07, 4.132711253E-05
+!
+!                           adams_view_name='MARKER_7'
+MARKER/7
+, PART = 3
+, QP = 0, 0.1288609375, 0
+, REULER = -8.296914611D, 0D, 0D
+!
+!                          adams_view_name='MARKER_27'
+MARKER/27
+, PART = 3
+, QP = 0, 0.06, 0
+, REULER = 0D, 90D, -158.3206246D
+!
+!                          adams_view_name='MARKER_55'
+MARKER/55
+, PART = 3
+, QP = 0, 0.06, 0
+, REULER = 0D, 90D, -158.3206246D
+!
+!                         adams_view_name='arm-7_Origin'
+MARKER/10003
+, PART = 3
+!
+!                              adams_view_name='cm'
+MARKER/10004
+, PART = 3
+, QP = 8.327425589E-09, 0.0770484358, 0
+!
+!                         adams_view_name='MARKER_10030'
+MARKER/10030
+, PART = 3
+, QP = -1.087379052E-07, -4.412944405E-07, -1.095736066E-07
+, REULER = 2.625042574E-04D, 0D, 0D
+!
+!                     adams_view_name='arm_7_graphic_body1'
+GRAPHICS/6
+, EXTERNAL
+, RM = 10030
+, FILE = final_SW_part8_solid1.xmt_bin
+, FACETING_TOLERANCE = 300.0028
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='body-6'
+PART/4
+, QG = 0.0257091307, 0.034892721, 0.1540763367
+, REULER = -102.722391D, 97.26469003D, 105.9684634D
+, MASS = 0.0237498323
+, CM = 10006
+, IP = 3.554891158E-05, 1.569584706E-06, 3.55489071E-05
+!
+!                          adams_view_name='MARKER_20'
+MARKER/20
+, PART = 4
+, QP = 0, -0.0138609375, 0
+, REULER = 74.03153655D, 97.26469003D, -77.27760898D
+!
+!                          adams_view_name='MARKER_30'
+MARKER/30
+, PART = 4
+, QP = 0, 0.053, 0
+, REULER = 0D, 90D, -53.49040886D
+!
+!                          adams_view_name='MARKER_52'
+MARKER/52
+, PART = 4
+, QP = 0, 0.0698733027, 0
+, REULER = 0D, 90D, -53.49040886D
+!
+!                        adams_view_name='body-6_Origin'
+MARKER/10005
+, PART = 4
+!
+!                              adams_view_name='cm'
+MARKER/10006
+, PART = 4
+, QP = 3.494386014E-09, 0.0323523617, 0
+!
+!                         adams_view_name='MARKER_10031'
+MARKER/10031
+, PART = 4
+, QP = -7.121829226E-08, -3.244557401E-13, 6.26545739E-08
+, REULER = 90.00014724D, 60.39616828D, -89.99970213D
+!
+!                     adams_view_name='body_6_graphic_body1'
+GRAPHICS/8
+, EXTERNAL
+, RM = 10031
+, FILE = final_SW_part5_solid1.xmt_bin
+, FACETING_TOLERANCE = 300.0028
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='arm-2'
+PART/5
+, QG = -0.0523529806, 0.0440763521, 0.0119732595
+, REULER = 99.39868823D, 8.571103865D, -120.7946448D
+, MASS = 0.0227971458
+, CM = 10008
+, IP = 4.132712518E-05, 6.760281147E-07, 4.132711253E-05
+!
+!                           adams_view_name='MARKER_3'
+MARKER/3
+, PART = 5
+, QP = 0, 0.1288609375, 0
+, REULER = 21.4990819D, 0D, 0D
+!
+!                          adams_view_name='MARKER_34'
+MARKER/34
+, PART = 5
+, QP = 0, 0.06, 0
+, REULER = 0D, 90D, 86.19946968D
+!
+!                          adams_view_name='MARKER_57'
+MARKER/57
+, PART = 5
+, QP = 0, 0.06, 0
+, REULER = 0D, 90D, 86.19946968D
+!
+!                         adams_view_name='arm-2_Origin'
+MARKER/10007
+, PART = 5
+!
+!                              adams_view_name='cm'
+MARKER/10008
+, PART = 5
+, QP = 8.327425589E-09, 0.0770484358, 0
+!
+!                         adams_view_name='MARKER_10032'
+MARKER/10032
+, PART = 5
+, QP = -1.106812368E-07, -2.929418148E-08, -1.264209865E-07
+, REULER = 2.671910138E-04D, 0D, 0D
+!
+!                     adams_view_name='arm_2_graphic_body1'
+GRAPHICS/10
+, EXTERNAL
+, RM = 10032
+, FILE = final_SW_part2_solid1.xmt_bin
+, FACETING_TOLERANCE = 300.0028
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='arm-8'
+PART/6
+, QG = 0.0685869916, 0.0440763521, 0.0119732595
+, REULER = 176.0932308D, 4.827134069D, -155.0574468D
+, MASS = 0.0227971458
+, CM = 10010
+, IP = 4.132712518E-05, 6.760281147E-07, 4.132711253E-05
+!
+!                           adams_view_name='MARKER_5'
+MARKER/5
+, PART = 6
+, QP = 0, 0.1288609375, 0
+, REULER = -21.02192113D, 0D, 0D
+!
+!                          adams_view_name='MARKER_25'
+MARKER/25
+, PART = 6
+, QP = 0, 0.06, 0
+, REULER = 0D, 90D, -76.78282816D
+!
+!                          adams_view_name='MARKER_49'
+MARKER/49
+, PART = 6
+, QP = 0, 0.06, 0
+, REULER = 0D, 90D, -76.78282816D
+!
+!                         adams_view_name='arm-8_Origin'
+MARKER/10009
+, PART = 6
+!
+!                              adams_view_name='cm'
+MARKER/10010
+, PART = 6
+, QP = 8.327425589E-09, 0.0770484358, 0
+!
+!                         adams_view_name='MARKER_10033'
+MARKER/10033
+, PART = 6
+, QP = -1.026244877E-07, 4.61989544E-07, -1.132245633E-07
+, REULER = 2.477364144E-04D, 0D, 0D
+!
+!                     adams_view_name='arm_8_graphic_body1'
+GRAPHICS/12
+, EXTERNAL
+, RM = 10033
+, FILE = final_SW_part13_solid1.xmt_bin
+, FACETING_TOLERANCE = 300.0028
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='body-8'
+PART/7
+, QG = 0.0721331863, 0.034892721, 0.0127266043
+, REULER = -68.69524316D, 92.49486025D, 94.38014939D
+, MASS = 0.0237498323
+, CM = 10012
+, IP = 3.554891158E-05, 1.569584706E-06, 3.55489071E-05
+!
+!                          adams_view_name='MARKER_16'
+MARKER/16
+, PART = 7
+, QP = 0, -0.0138609375, 0
+, REULER = 85.61985061D, 92.49486025D, -111.3047568D
+!
+!                          adams_view_name='MARKER_26'
+MARKER/26
+, PART = 7
+, QP = 0, 0.053, 0
+, REULER = 0D, 90D, -171.3246029D
+!
+!                          adams_view_name='MARKER_50'
+MARKER/50
+, PART = 7
+, QP = 0, 0.0698733027, 0
+, REULER = 0D, 90D, -171.3246029D
+!
+!                        adams_view_name='body-8_Origin'
+MARKER/10011
+, PART = 7
+!
+!                              adams_view_name='cm'
+MARKER/10012
+, PART = 7
+, QP = 3.494386014E-09, 0.0323523617, 0
+!
+!                         adams_view_name='MARKER_10034'
+MARKER/10034
+, PART = 7
+, QP = -6.116911463E-08, -2.860645748E-13, 6.497992745E-08
+, REULER = 2.528495728E-04D, 0D, 0D
+!
+!                     adams_view_name='body_8_graphic_body1'
+GRAPHICS/14
+, EXTERNAL
+, RM = 10034
+, FILE = final_SW_part10_solid1.xmt_bin
+, FACETING_TOLERANCE = 300.0028
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='arm-4'
+PART/8
+, QG = -0.0119006328, 0.0440763521, 0.1513819143
+, REULER = 135.2154998D, 29.25855689D, -123.9425265D
+, MASS = 0.0227971458
+, CM = 10014
+, IP = 4.132712518E-05, 6.760281147E-07, 4.132711253E-05
+!
+!                          adams_view_name='MARKER_11'
+MARKER/11
+, PART = 8
+, QP = 0, 0.1288609375, 0
+, REULER = -7.373284255D, 0D, 0D
+!
+!                          adams_view_name='MARKER_31'
+MARKER/31
+, PART = 8
+, QP = 0, 0.06, 0
+, REULER = 0D, 90D, -19.13542909D
+!
+!                         adams_view_name='arm-4_Origin'
+MARKER/10013
+, PART = 8
+!
+!                              adams_view_name='cm'
+MARKER/10014
+, PART = 8
+, QP = 8.327425589E-09, 0.0770484358, 0
+!
+!                         adams_view_name='MARKER_10035'
+MARKER/10035
+, PART = 8
+, QP = -5.297029496E-08, 3.522755163E-07, -1.278142826E-07
+, REULER = 1.278713464E-04D, 0D, 0D
+!
+!                     adams_view_name='arm_4_graphic_body1'
+GRAPHICS/16
+, EXTERNAL
+, RM = 10035
+, FILE = final_SW_part7_solid1.xmt_bin
+, FACETING_TOLERANCE = 300.0028
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='arm-6'
+PART/9
+, QG = 0.0281346438, 0.0440763521, 0.1513819143
+, REULER = 176.1156744D, 16.11342123D, 169.5085336D
+, MASS = 0.0227971458
+, CM = 10016
+, IP = 4.132712518E-05, 6.760281147E-07, 4.132711253E-05
+!
+!                           adams_view_name='MARKER_9'
+MARKER/9
+, PART = 9
+, QP = 0, 0.1288609375, 0
+, REULER = 14.53411467D, 0D, 0D
+!
+!                          adams_view_name='MARKER_29'
+MARKER/29
+, PART = 9
+, QP = 0, 0.06, 0
+, REULER = 0D, 90D, 41.0513659D
+!
+!                          adams_view_name='MARKER_51'
+MARKER/51
+, PART = 9
+, QP = 0, 0.06, 0
+, REULER = 0D, 90D, 41.0513659D
+!
+!                         adams_view_name='arm-6_Origin'
+MARKER/10015
+, PART = 9
+!
+!                              adams_view_name='cm'
+MARKER/10016
+, PART = 9
+, QP = 8.327425589E-09, 0.0770484358, 0
+!
+!                         adams_view_name='MARKER_10036'
+MARKER/10036
+, PART = 9
+, QP = -9.728975573E-08, -2.284135809E-07, -1.300590978E-07
+, REULER = -89.99994931D, 59.60383172D, 90.00036401D
+!
+!                     adams_view_name='arm_6_graphic_body1'
+GRAPHICS/18
+, EXTERNAL
+, RM = 10036
+, FILE = final_SW_part4_solid1.xmt_bin
+, FACETING_TOLERANCE = 300.0028
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='top-1'
+PART/10
+, QG = 0.0081170055, 0.1859360738, 0.07
+, REULER = 0D, 180D, 0D
+, MASS = 0.1058365749
+, CM = 10019
+, IP = 1.777975041E-04, 3.486563196E-04, 1.777975041E-04
+!
+!                           adams_view_name='MARKER_4'
+MARKER/4
+, PART = 10
+, QP = -0.0141869945, 0.022, 0.0678589838
+, REULER = 80.60131177D, 171.4288961D, 80.70443711D
+!
+!                           adams_view_name='MARKER_6'
+MARKER/6
+, PART = 10
+, QP = 0.0141869945, 0.022, 0.0678589838
+, REULER = 3.906769227D, 175.1728659D, 3.920632102D
+!
+!                           adams_view_name='MARKER_8'
+MARKER/8
+, PART = 10
+, QP = 0.0658611012, 0.022, -0.0216431943
+, REULER = 166.1500859D, 159.4251907D, 165.246402D
+!
+!                          adams_view_name='MARKER_10'
+MARKER/10
+, PART = 10
+, QP = 0.0516741066, 0.022, -0.0462157896
+, REULER = 3.884325584D, 163.8865788D, 4.042648315D
+!
+!                          adams_view_name='MARKER_12'
+MARKER/12
+, PART = 10
+, QP = -0.0516741066, 0.022, -0.0462157896
+, REULER = 44.78450021D, 150.7414431D, 48.68418921D
+!
+!                          adams_view_name='MARKER_14'
+MARKER/14
+, PART = 10
+, QP = -0.0658611012, 0.022, -0.0216431943
+, REULER = 113.3561743D, 127.1468563D, 104.6152842D
+!
+!                         adams_view_name='top-1_Origin'
+MARKER/10018
+, PART = 10
+!
+!                              adams_view_name='cm'
+MARKER/10019
+, PART = 10
+, QP = 0, 0.0050297874, 0
+!
+!                         adams_view_name='MARKER_10037'
+MARKER/10037
+, PART = 10
+, QP = -6.589866959E-07, 1.654123444E-08, 6.622736067E-07
+, REULER = 1.634252601E-04D, 0D, 0D
+!
+!                     adams_view_name='top_1_graphic_body1'
+GRAPHICS/20
+, EXTERNAL
+, RM = 10037
+, FILE = final_SW_part15_solid1.xmt_bin
+, FACETING_TOLERANCE = 300.0028
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='body-1'
+PART/11
+, QG = -0.0734913006, 0.034892721, 0.043197059
+, REULER = -90.97799094D, 74.38249993D, 68.7408057D
+, MASS = 0.0237498323
+, CM = 10021
+, IP = 3.554891158E-05, 1.569584706E-06, 3.55489071E-05
+!
+!                          adams_view_name='MARKER_36'
+MARKER/36
+, PART = 11
+, QP = 0, -0.0138609375, 0
+, REULER = 111.2591943D, 74.38249993D, -89.02200906D
+!
+!                          adams_view_name='MARKER_38'
+MARKER/38
+, PART = 11
+, QP = 0, 0.053, 0
+, REULER = 0D, 90D, 87.43412068D
+!
+!                          adams_view_name='MARKER_48'
+MARKER/48
+, PART = 11
+, QP = 0, 0.0698733027, 0
+, REULER = 0D, 90D, 87.43412068D
+!
+!                          adams_view_name='MARKER_54'
+MARKER/54
+, PART = 11
+, QP = 0, 0.0698733027, 0
+, REULER = 0D, 90D, 87.43412068D
+!
+!                        adams_view_name='body-1_Origin'
+MARKER/10020
+, PART = 11
+!
+!                              adams_view_name='cm'
+MARKER/10021
+, PART = 11
+, QP = 3.494386014E-09, 0.0323523617, 0
+!
+!                         adams_view_name='MARKER_10038'
+MARKER/10038
+, PART = 11
+, QP = -7.321268201E-08, -2.663078091E-13, 4.532806507E-08
+, REULER = 3.02633053E-04D, 0D, 0D
+!
+!                     adams_view_name='body_1_graphic_body1'
+GRAPHICS/22
+, EXTERNAL
+, RM = 10038
+, FILE = final_SW_part12_solid1.xmt_bin
+, FACETING_TOLERANCE = 300.0028
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='body-7'
+PART/12
+, QG = 0.0897253115, 0.034892721, 0.043197059
+, REULER = -83.78481028D, 91.99085963D, 69.54865084D
+, MASS = 0.0237498323
+, CM = 10023
+, IP = 3.554891158E-05, 1.569584706E-06, 3.55489071E-05
+!
+!                          adams_view_name='MARKER_18'
+MARKER/18
+, PART = 12
+, QP = 0, -0.0138609375, 0
+, REULER = 110.4513492D, 91.99085963D, -96.21518972D
+!
+!                          adams_view_name='MARKER_28'
+MARKER/28
+, PART = 12
+, QP = 0, 0.053, 0
+, REULER = 0D, 90D, 107.1376007D
+!
+!                          adams_view_name='MARKER_56'
+MARKER/56
+, PART = 12
+, QP = 0, 0.0698733027, 0
+, REULER = 0D, 90D, 107.1376007D
+!
+!                        adams_view_name='body-7_Origin'
+MARKER/10022
+, PART = 12
+!
+!                              adams_view_name='cm'
+MARKER/10023
+, PART = 12
+, QP = 3.494386014E-09, 0.0323523617, 0
+!
+!                         adams_view_name='MARKER_10039'
+MARKER/10039
+, PART = 12
+, QP = -5.876319549E-08, -2.855216064E-13, 6.83726834E-08
+, REULER = 2.429044152E-04D, 0D, 0D
+!
+!                     adams_view_name='body_7_graphic_body1'
+GRAPHICS/24
+, EXTERNAL
+, RM = 10039
+, FILE = final_SW_part9_solid1.xmt_bin
+, FACETING_TOLERANCE = 300.0028
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='body-2'
+PART/13
+, QG = -0.0558991754, 0.034892721, 0.0127266043
+, REULER = -111.0288501D, 91.10889772D, 94.37681078D
+, MASS = 0.0237498323
+, CM = 10025
+, IP = 3.554891158E-05, 1.569584706E-06, 3.55489071E-05
+!
+!                          adams_view_name='MARKER_24'
+MARKER/24
+, PART = 13
+, QP = 0, -0.0138609375, 0
+, REULER = 85.62318922D, 91.10889772D, -68.97114986D
+!
+!                          adams_view_name='MARKER_33'
+MARKER/33
+, PART = 13
+, QP = 0, 0.053, 0
+, REULER = 0D, 90D, -12.28969643D
+!
+!                          adams_view_name='MARKER_58'
+MARKER/58
+, PART = 13
+, QP = 0, 0.0698733027, 0
+, REULER = 0D, 90D, -12.28969643D
+!
+!                        adams_view_name='body-2_Origin'
+MARKER/10024
+, PART = 13
+!
+!                              adams_view_name='cm'
+MARKER/10025
+, PART = 13
+, QP = 3.494386014E-09, 0.0323523617, 0
+!
+!                         adams_view_name='MARKER_10040'
+MARKER/10040
+, PART = 13
+, QP = -6.347968804E-08, -3.558715822E-13, 7.482944972E-08
+, REULER = 2.624005898E-04D, 0D, 0D
+!
+!                     adams_view_name='body_2_graphic_body1'
+GRAPHICS/26
+, EXTERNAL
+, RM = 10040
+, FILE = final_SW_part6_solid1.xmt_bin
+, FACETING_TOLERANCE = 300.0028
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='body-4'
+PART/14
+, QG = -0.0094751197, 0.034892721, 0.1540763367
+, REULER = -80.99591966D, 70.42074336D, 106.8368574D
+, MASS = 0.0237498323
+, CM = 10027
+, IP = 3.554891158E-05, 1.569584706E-06, 3.55489071E-05
+!
+!                          adams_view_name='MARKER_22'
+MARKER/22
+, PART = 14
+, QP = 0, -0.0138609375, 0
+, REULER = 73.16314263D, 70.42074336D, -99.00408034D
+!
+!                          adams_view_name='MARKER_32'
+MARKER/32
+, PART = 14
+, QP = 0, 0.053, 0
+, REULER = 0D, 90D, -113.6772038D
+!
+!                        adams_view_name='body-4_Origin'
+MARKER/10026
+, PART = 14
+!
+!                              adams_view_name='cm'
+MARKER/10027
+, PART = 14
+, QP = 3.494386014E-09, 0.0323523617, 0
+!
+!                         adams_view_name='MARKER_10041'
+MARKER/10041
+, PART = 14
+, QP = -7.195922486E-08, -2.368383267E-13, 3.674806144E-08
+, REULER = 2.974517434E-04D, 0D, 0D
+!
+!                     adams_view_name='body_4_graphic_body1'
+GRAPHICS/28
+, EXTERNAL
+, RM = 10041
+, FILE = final_SW_part3_solid1.xmt_bin
+, FACETING_TOLERANCE = 300.0028
+!
+!-------------------------------- CONSTRAINTS ----------------------------------
+!
+!                         adams_view_name='Concentric22'
+JOINT/1
+, SPHERICAL
+, I = 3
+, J = 4
+!
+!                         adams_view_name='Concentric1'
+JOINT/2
+, CYLINDRICAL
+, I = 37
+, J = 38
+!
+!                         adams_view_name='Concentric5'
+JOINT/3
+, CYLINDRICAL
+, I = 31
+, J = 32
+!
+!                         adams_view_name='Concentric9'
+JOINT/4
+, CYLINDRICAL
+, I = 25
+, J = 26
+!
+!                         adams_view_name='Concentric14'
+JOINT/5
+, SPHERICAL
+, I = 19
+, J = 20
+!
+!                         adams_view_name='Concentric17'
+JOINT/6
+, SPHERICAL
+, I = 13
+, J = 14
+!
+!                         adams_view_name='Concentric20'
+JOINT/7
+, SPHERICAL
+, I = 7
+, J = 8
+!
+!                         adams_view_name='Concentric2'
+JOINT/8
+, SPHERICAL
+, I = 35
+, J = 36
+!
+!                         adams_view_name='Concentric7'
+JOINT/9
+, CYLINDRICAL
+, I = 29
+, J = 30
+!
+!                         adams_view_name='Concentric10'
+JOINT/10
+, SPHERICAL
+, I = 23
+, J = 24
+!
+!                         adams_view_name='Concentric15'
+JOINT/11
+, SPHERICAL
+, I = 17
+, J = 18
+!
+!                         adams_view_name='Concentric18'
+JOINT/12
+, SPHERICAL
+, I = 11
+, J = 12
+!
+!                         adams_view_name='Concentric21'
+JOINT/13
+, SPHERICAL
+, I = 5
+, J = 6
+!
+!                         adams_view_name='Concentric3'
+JOINT/14
+, CYLINDRICAL
+, I = 33
+, J = 34
+!
+!                         adams_view_name='Concentric8'
+JOINT/15
+, CYLINDRICAL
+, I = 27
+, J = 28
+!
+!                         adams_view_name='Concentric13'
+JOINT/16
+, SPHERICAL
+, I = 21
+, J = 22
+!
+!                         adams_view_name='Concentric16'
+JOINT/17
+, SPHERICAL
+, I = 15
+, J = 16
+!
+!                         adams_view_name='Concentric19'
+JOINT/18
+, SPHERICAL
+, I = 9
+, J = 10
+!
+!                   adams_view_name='LinearMotor4_TranslateZ'
+MOTION/1
+, VELOCITY
+, I = 47
+, J = 48
+, Z
+, FUNCTION = 0.01
+!
+!                   adams_view_name='LinearMotor6_TranslateZ'
+MOTION/2
+, VELOCITY
+, I = 49
+, J = 50
+, Z
+, FUNCTION = 0.01
+!
+!                   adams_view_name='LinearMotor5_TranslateZ'
+MOTION/3
+, VELOCITY
+, I = 51
+, J = 52
+, Z
+, FUNCTION = 0.01
+!
+!                   adams_view_name='LinearMotor3_TranslateZ'
+MOTION/4
+, VELOCITY
+, I = 53
+, J = 54
+, Z
+, FUNCTION = 0.01
+!
+!                   adams_view_name='LinearMotor1_TranslateZ'
+MOTION/5
+, VELOCITY
+, I = 55
+, J = 56
+, Z
+, FUNCTION = 0.01
+!
+!                   adams_view_name='LinearMotor2_TranslateZ'
+MOTION/6
+, VELOCITY
+, I = 57
+, J = 58
+, Z
+, FUNCTION = 0.01
+!
+!----------------------------- ANALYSIS SETTINGS -------------------------------
+!
+INTEGRATOR/
+, GSTIFF
+, ERROR = 1.0E-04
+, PATTERN = T:T:T:T:T:T:T:T:T:T
+, MAXIT = 25
+, HINIT = 1.0E-04
+, HMAX = 0.01
+, HMIN = 1.0E-07
+!
+KINEMATICS/
+, HMAX = 0.01
+!
+EQUILIBRIUM/
+!
+OUTPUT/
+, REQSAVE
+, GRSAVE
+, NOSEPARATOR
+!
+RESULTS/
+, FORMATTED
+, XRF
+!
+END
